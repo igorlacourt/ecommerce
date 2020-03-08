@@ -1,6 +1,14 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import jQuery from 'jquery';
+import 'popper.js';
+import 'bootstrap';
+import './assets/app.scss'
+Vue.component('Navbar', require('./components/Navbar.vue').default);
+
+
+window.$ = window.jQuery = jQuery
 
 Vue.config.productionTip = false;
 
